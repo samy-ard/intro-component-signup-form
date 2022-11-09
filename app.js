@@ -7,7 +7,7 @@
 			let $last_name = $form.find('input[name="last_name"]');
 			let $email = $form.find('input[name="email"]');
 			let $password = $form.find('input[name="password"]');
-			$('.has-error').removeClass('.has-error');
+			$('.form-group').removeClass('has-error');
 			$('.form-message').remove();
 			if( !$first_name.val() ) {
 				$first_name.parent().addClass('has-error');
