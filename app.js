@@ -19,6 +19,7 @@
 			}
 			if( !$email.val() || $email.val().indexOf('@') == -1 ) {
 				$email.parent().addClass('has-error');
+				console.log($email.val().indexOf('@') == -1);
 				$email.parent().append('<div class="form-message">Looks like this is not an email</div>');
 			}
 			if( !$password.val() ) {
